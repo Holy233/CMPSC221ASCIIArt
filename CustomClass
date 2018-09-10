@@ -1,0 +1,47 @@
+/**
+ * CustomClasses
+ * @author Xunyuan Sun CMPSC 221
+ */
+
+public class Main 
+{
+  
+  public static void main(String[] args) 
+  {
+   
+    Employee Employee1= new Employee("Peter", 1000000.0, 18);
+    
+    System.out.println("Name: " + Employee1.getName() + " Salary: " + Employee1.getSalary() + " Age: " + Employee1.getAge());
+  }
+  
+}
+
+
+class Employee
+{
+  private String name;
+  private double salary;
+  private int age;
+  
+  public Employee(String n, double s, int a)
+  {
+    name = n;
+    salary = s;
+    age = a;
+  }
+  
+  public String getName()
+  {
+    return name;
+  }
+  
+  public double getSalary()
+  {
+    return salary;
+  }
+  
+  public int getAge()
+  {
+    return age;
+  }
+}
